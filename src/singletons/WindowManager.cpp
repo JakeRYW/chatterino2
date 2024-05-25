@@ -698,7 +698,7 @@ IndirectChannel WindowManager::decodeChannel(const SplitDescriptor &descriptor)
     }
     else if (descriptor.type_ == "live")
     {
-        return app->twitch->liveChannel;
+        return getIApp()->getTwitch()->getLiveChannel();
     }
     else if (descriptor.type_ == "automod")
     {
